@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #560DF8;
+    --gray: rgb(222, 226, 230);
+    --light-gray: #F7F7F7;
+    --blue-gradient: linear-gradient(90deg, rgba(63, 0, 202, 0.9) 13.45%, rgba(86, 13, 248, 0.7) 59.74%, rgba(159, 116, 255, 0.7) 100%);
+    --dark-gray: #848484;
+}
+
+
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/inter.ttf");
+}
+
+* {
+    font-family: "Inter";
+}
+
+.bg-primary {
+    background: var(--primary-color);
+}
+
+.search-input {
+    width: 282px;
+    height: 50px;
+    border-radius: 1rem;
+    padding-left: 1.5rem;
+}
+
+.normal-input {
+   
+    border-radius:  10px;
+    min-height: 40px;
+}
+.normal-input2 {
+   
+    border-radius: 10px;}
+
+.blue-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 12px;
+
+    color: var(--primary-color);
+}
+
+.outline-primary-btn {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    transition: all 0.3 ease;
+}
+
+.outline-primary-btn:hover {
+    background: var(var(--primary-color));
+    color: white;
+}
+
+.gray-label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+
+    color: var(--dark-gray);
+}
+
+.custom-select-input>div {
+    border-radius: 10px;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.custom-select-input input:focus {
+    outline: none !important;
+    border: none !important;
+    border-color: transparent !important;
+    outline-color: transparent !important;
+    box-shadow: initial !important;
+}
+
+/* ---------------------------- print --------------------- */
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        padding-top: 1rem;
+    }
+}
+
+
+/* ------------------ ----------- snackbar ---------------------- */
+.snackbar-container{
+    z-index: 11111111111111111111111;
+}
